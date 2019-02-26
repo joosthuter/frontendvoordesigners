@@ -1,0 +1,97 @@
+h1 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    width: 80vw;
+    margin: auto;
+    text-align: center;
+    height: 2em;
+}
+
+button {
+    height: 2em;
+    width: 2em;
+    background-color: crimson;
+    border-radius: 1em;
+    box-shadow: 0px 3px 13px -2px rgba(0, 0, 0, 0.4);
+    border: none;
+}
+
+button:focus {
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 1.1em;
+    box-shadow: 0px 3px 17px -2px rgba(0, 0, 0, 0.28);
+    outline: none;
+    border: none;
+}
+
+button.btnWhite {
+    background-color: white;
+}
+
+button.btnGreen {
+    background-color: #27ae60;
+    margin-left: 2em;
+}
+
+button.btnBlue {
+    background-color: #3498db;
+}
+
+button.btnPink {
+    background-color: #fd79a8;
+}
+
+button.btnRed {
+    background-color: #e74c3c;
+}
+
+button.btnOrange {
+    background-color: #e67e22;
+}
+
+button.btnYellow {
+    background-color: #f1c40f;
+}
+
+button.deleteHide {
+    background-color: #181818;
+    position: relative;
+    left: 0em;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 1s;
+}
+
+button.deleteShow {
+    background-color: #181818;
+    position: relative;
+    left: 3em;
+    visibility: visible;
+    opacity: 0.5;
+    transition: all 1s;
+}
+
+main div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80vw;
+    margin: auto;
+    padding: 0.2em;
+}
+
+
+img {
+    max-height: 15em;
+    margin: 1em 0.5em;
+    transition: all 0.2s;
+}
+
+img:hover {
+    max-height: 14em;
+    margin-top: 1.5em;
+}

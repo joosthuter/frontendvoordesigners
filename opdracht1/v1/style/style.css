@@ -1,0 +1,15 @@
+li {
+    list-style-type: none;
+}
+
+div {
+    height: 2em;
+    width: 15em;
+    background-color: white;
+}
+
+li div.dropzone {
+    background-color: green;
+    height: 0.2em;
+    transition: height 0.5s;
+}
