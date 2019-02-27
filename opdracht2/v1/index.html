@@ -10,22 +10,36 @@
 
 <body>
     <header>
-       <a href="https://joosthuter.github.io/frontendvoordesigners/opdracht1/v4/">Joop's Gallery</a>
+        <a href="https://joosthuter.github.io/frontendvoordesigners/opdracht1/v4/">Joop's Gallery</a>
         <h1>Joop's Fonts</h1>
-        
+        <div>
+            <h2>poem of the day</h2>
+            <p id="poemFont"></p>
+        </div>
+        <p id="poem"></p>
     </header>
     <nav>
         <div>
-            <p>font size</p>
+            <span>
+                <p class="titel">font size</p>
+                <p id="fontSize">24 pt</p>
+            </span>
             <input type="range" id="range" min="1.0" max="4.0" step="0.1" value="2.0" />
         </div>
         <div>
             <p>Weight</p>
-
+            <span class="regubold">
+                <p id="regular" class="visiting">regular</p>
+                <p id="bold">bold</p>
+            </span>
         </div>
         <div>
-            <p>Color</p>
+            <p class="titel">Color</p>
             <input id="colorPicker" type="color" name="colorpicker" value="#848484">
+        </div>
+        <div>
+            <p class="titel">text</p>
+            <textarea name="" class="textSetting" id="textSet" cols="13" rows="1"></textarea>
         </div>
     </nav>
     <main>
@@ -53,7 +67,7 @@
                     <textarea name="joop" rows="5" cols="10" class="text">stopped in my tracks, by a primrose blooming – I, too, will overcome this</textarea>
                 </div>
                 <div class="tahoma">
-                    <h3>tahoma</h3>
+                    <h3>Tahoma</h3>
                     <textarea name="joop" rows="5" cols="10" class="text">dinner, a bowl of rice and soy sauce, food to survive on</textarea>
                 </div>
             </main>

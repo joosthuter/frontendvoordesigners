@@ -15,12 +15,83 @@ header {
     transition: background-color 1.1s;
 }
 
+
+
+header div {
+    display: flex;
+    justify-content: flex-start;
+    width: 20em;
+    margin: auto;
+}
+
+header div p {
+    padding-top: 0.6em;
+    padding-left: 1em;
+    color: #f04ea6;
+
+}
+
+header p#poem {
+    text-align: left;
+    width: 20em;
+    margin: auto;
+}
+
 nav {
-    max-width: 30em;
+    max-width: 60em;
     margin: auto;
     display: flex;
     justify-content: space-around;
 }
+
+p.titel {
+    margin-bottom: 1.3em;
+}
+
+span.regubold p.visiting {
+    color: #f04ea6;
+    font-weight: 700;
+}
+
+span.regubold p.visiting:last-child {
+    color: #f04ea6;
+}
+
+span.regubold p {
+    margin: 0;
+}
+
+span.regubold p:hover {
+    color: #f5add4;
+}
+
+nav span {
+    display: flex;
+    justify-content: center;
+}
+
+nav span p:last-child {
+    margin-left: 1em;
+    color: #f04ea6;
+}
+
+nav span p:last-child:hover {
+    color: #f5add4;
+}
+
+span.regubold {
+    background-color: #f2f2f2;
+    padding: 0.5em;
+    border-radius: 2em;
+    width: 8em;
+}
+
+span.regubold p:last-child {
+    margin-left: 2em;
+    color: #5d5a5a;
+}
+
+
 
 a {
     position: absolute;
@@ -45,27 +116,48 @@ h1 {
 }
 
 h2 {
+    font-weight: 700;
+}
+
+section h2 {
     font-weight: 300;
-    border-bottom-width: 0.05em;
-    border-bottom-color: #5d5a5a;
-    border-bottom-style: solid;
     padding-bottom: 0.5em;
     width: 80%;
     margin: auto;
 }
 
+.textSetting {
+    text-align: left;
+    text-overflow: ellipsis;
+    margin-top: -0.1em;
+    padding: 0.3em;
+    background-color: #f8f8f8;
+    border: none;
+    color: #f04ea6;
+    font-size: 1em;
+    font-family: courier new;
+    transition: all 0.3s;
+}
+
 .text {
     text-align: left;
+    text-overflow: ellipsis;
     margin: 0;
     padding: 0;
     background-color: transparent;
     border: none;
     font-size: 2em;
     width: 100%;
+    transition: all 0.3s;
 }
 
 .text:focus {
     outline: none;
+    background-color: #f8f8f8;
+}
+
+.text:hover {
+    background-color: #f8f8f8;
 }
 
 main {
@@ -92,7 +184,7 @@ main section div {
     border-top-width: 0.05em;
     border-top-color: #5d5a5a;
     border-top-style: solid;
-    min-width: 20em;
+    width: 20em;
     padding: 2em;
     padding-top: 1em;
     transition: all 0.5s;
@@ -139,4 +231,74 @@ main section div:first-of-type {}
 
 .palatino textarea {
     font-family: palatino;
+}
+
+/*input style afkomstig van: http://danielstern.ca/range.css/#/*/
+
+input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    margin: 6.8px 0;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 4.4px;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+    background: #f04ea6;
+    border-radius: 2.8px;
+    border: 0px solid #010101;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0.9px 0.9px 0.5px rgba(0, 0, 0, 0.4), 0px 0px 0.9px rgba(13, 13, 13, 0.4);
+    border: 0px solid rgba(0, 0, 0, 0);
+    height: 16px;
+    width: 16px;
+    border-radius: 9px;
+    background: #f04ea6;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -6.8px;
+}
+
+input[type=range]:active::-webkit-slider-thumb {
+    background: #f577bc;
+}
+
+input[type=range]:hover::-webkit-slider-thumb {
+    background: #f577bc;
+}
+
+/*input style afkomstig van: https://stackoverflow.com/questions/11167281/webkit-css-to-control-the-box-around-the-color-in-an-inputtype-color */
+
+input[type="color"] {
+    -webkit-appearance: none;
+    border: none;
+    width: 6em;
+    height: 2.5em;
+    transition: all 0.5s;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+    border-radius: 2em;
+    margin-top: -0.4em;
+    background-image: url(../images/edit.png);
+    background-size: 2em;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+input[type="color"]:hover {
+    width: 6.5em;
 }
