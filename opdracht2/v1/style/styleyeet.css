@@ -102,6 +102,17 @@ a:hover {
     color: #f04ea6;
 }
 
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
 h1 {
     animation-name: rotate;
     animation-duration: 1s;
@@ -148,6 +159,7 @@ section h2 {
     border: none;
     font-size: 2em;
     width: 100%;
+    overflow-y: hidden;
     transition: all 0.3s;
 }
 
@@ -158,6 +170,7 @@ section h2 {
 
 .text:hover {
     background-color: #f8f8f8;
+    overflow-y: auto;
 }
 
 main {

@@ -27,7 +27,7 @@ function fontify() {
 function colorfy() {
     for (var i = 0; i < text.length; i++) {
         var allText = text[i];
-        console.log("yeet");
+
         allText.style["color"] = this.value;
     }
 }
@@ -66,6 +66,7 @@ function textify() {
 }
 
 
+
 poemify();
 
 
@@ -74,3 +75,5 @@ range.addEventListener("input", fontify);
 regular.addEventListener("click", makeReg);
 bold.addEventListener("click", makeBold);
 textSetting.addEventListener("input", textify);
+
+//window.addEventListener("keydown", joop);
