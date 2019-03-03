@@ -8,6 +8,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    transition: all 1s;
 }
 
 header {
@@ -59,6 +60,7 @@ span.regubold p.visiting:last-child {
 
 span.regubold p {
     margin: 0;
+    cursor: pointer;
 }
 
 span.regubold p:hover {
@@ -80,7 +82,8 @@ nav span p:last-child:hover {
 }
 
 span.regubold {
-    background-color: #f2f2f2;
+
+    background-color: rgba(103, 103, 103, 0.06);
     padding: 0.5em;
     border-radius: 2em;
     width: 8em;
@@ -91,11 +94,27 @@ span.regubold p:last-child {
     color: #5d5a5a;
 }
 
+span textarea {
+    text-align: left;
+    text-overflow: ellipsis;
+    padding: 0.3em;
+    background-color: rgba(103, 103, 103, 0.06);
+    border: none;
+    color: #f04ea6;
+    font-size: 1em;
+    font-family: courier new;
+    height: 1em;
+    overflow: hidden;
+    margin-top: 0.8em;
+    margin-left: 0.5em;
+}
+
 
 
 a {
     position: absolute;
-    right: 10em;
+    left: 10em;
+    top: 2em;
 }
 
 a:hover {
@@ -122,7 +141,6 @@ h1 {
     margin: auto;
     margin-bottom: 1em;
     margin-top: 1em;
-    color: #5d5a5a;
     transition: all 1s;
 }
 
@@ -142,12 +160,16 @@ section h2 {
     text-overflow: ellipsis;
     margin-top: -0.1em;
     padding: 0.3em;
-    background-color: #f8f8f8;
+    background-color: rgba(103, 103, 103, 0.06);
     border: none;
     color: #f04ea6;
     font-size: 1em;
     font-family: courier new;
     transition: all 0.3s;
+}
+
+.textSetting::placeholder {
+    color: rgba(149, 149, 149, 0.55);
 }
 
 .text {
@@ -169,18 +191,26 @@ section h2 {
 }
 
 .text:hover {
-    background-color: #f8f8f8;
+    background-color: rgba(103, 103, 103, 0.06);
     overflow-y: auto;
+}
+
+.text::placeholder {
+    color: #c9c9c9;
 }
 
 main {
     padding: 1em;
     padding-top: 3em;
     display: flex;
+    max-width: 100em;
+    margin: auto;
 }
 
 section {
     width: 50%;
+    max-width: 50em;
+
 }
 
 section main {
@@ -246,6 +276,62 @@ main section div:first-of-type {}
     font-family: palatino;
 }
 
+.merriweather textarea {
+    font-family: 'Merriweather', serif;
+}
+
+.lora textarea {
+    font-family: 'Lora', serif;
+}
+
+div.theme {
+
+    width: 7em;
+    display: flex;
+    position: absolute;
+    top: 1em;
+    right: 10%;
+}
+
+div.theme p {
+    color: #5d5a5a;
+    padding: 0.5em;
+    margin-right: 0.5em;
+}
+
+div.theme img {
+    height: 2em;
+    margin-top: 1em;
+}
+
+div.theme img:hover {
+    box-shadow: none;
+    animation-name: rotate;
+    animation-duration: 1s;
+    transition: all 1s;
+}
+
+.darktheme {
+    background-color: #191919;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+#diceSection {
+    margin: auto;
+}
+
+#diceSection div {
+    margin: auto;
+    margin-top: 2em;
+}
+
 /*input style afkomstig van: http://danielstern.ca/range.css/#/*/
 
 input[type=range] {
@@ -264,7 +350,6 @@ input[type=range]::-webkit-slider-runnable-track {
     cursor: pointer;
     box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
     background: #f04ea6;
-    border-radius: 2.8px;
     border: 0px solid #010101;
 }
 
@@ -295,7 +380,8 @@ input[type="color"] {
     border: none;
     width: 6em;
     height: 2.5em;
-    transition: all 0.5s;
+    background-color: transparent;
+    transition: all 0.2s;
 }
 
 input[type="color"]::-webkit-color-swatch-wrapper {
@@ -314,4 +400,10 @@ input[type="color"]::-webkit-color-swatch {
 
 input[type="color"]:hover {
     width: 6.5em;
+}
+
+@media only screen and (max-width: 1492px) {
+    main section div {
+        margin: auto;
+    }
 }
