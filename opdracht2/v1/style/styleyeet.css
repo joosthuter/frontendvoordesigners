@@ -39,7 +39,15 @@ header p#poem {
 }
 
 nav {
-    max-width: 60em;
+    position: relative;
+    z-index: 5;
+    margin-top: 1em;
+    background-color: rgba(178, 178, 178, 0.08);
+    padding-bottom: 1em;
+}
+
+.container {
+    width: 60em;
     margin: auto;
     display: flex;
     justify-content: space-around;
@@ -67,17 +75,17 @@ span.regubold p:hover {
     color: #f5add4;
 }
 
-nav span {
+.container span {
     display: flex;
     justify-content: center;
 }
 
-nav span p:last-child {
+.container span p:last-child {
     margin-left: 1em;
     color: #f04ea6;
 }
 
-nav span p:last-child:hover {
+.container span p:last-child:hover {
     color: #f5add4;
 }
 
@@ -155,6 +163,10 @@ section h2 {
     margin: auto;
 }
 
+textarea {
+    resize: none;
+}
+
 .textSetting {
     text-align: left;
     text-overflow: ellipsis;
@@ -172,6 +184,10 @@ section h2 {
     color: rgba(149, 149, 149, 0.55);
 }
 
+.textSetting:focus {
+    outline: none;
+}
+
 .text {
     text-align: left;
     text-overflow: ellipsis;
@@ -187,7 +203,7 @@ section h2 {
 
 .text:focus {
     outline: none;
-    background-color: #f8f8f8;
+    background-color: rgba(103, 103, 103, 0.06);
 }
 
 .text:hover {
@@ -195,11 +211,17 @@ section h2 {
     overflow-y: auto;
 }
 
+.text:hover::after {
+    background-color: transparent;
+}
+
 .text::placeholder {
     color: #c9c9c9;
 }
 
 main {
+    position: relative;
+    z-index: 10;
     padding: 1em;
     padding-top: 3em;
     display: flex;
@@ -207,10 +229,16 @@ main {
     margin: auto;
 }
 
+.yeet {
+    margin-top: -6.5em;
+    background-color: white;
+    transition: all 1s;
+
+}
+
 section {
     width: 50%;
     max-width: 50em;
-
 }
 
 section main {
@@ -242,7 +270,10 @@ main section div:hover {
     padding-top: 0.6em;
 }
 
-main section div:first-of-type {}
+::selection {
+    background-color: rgba(240, 78, 166, 0.6);
+    color: white;
+}
 
 .arial textarea {
     font-family: arial;
@@ -284,6 +315,10 @@ main section div:first-of-type {}
     font-family: 'Lora', serif;
 }
 
+.garamond textarea {
+    font-family: 'eb garamond';
+}
+
 div.theme {
 
     width: 7em;
@@ -302,6 +337,7 @@ div.theme p {
 div.theme img {
     height: 2em;
     margin-top: 1em;
+    cursor: pointer;
 }
 
 div.theme img:hover {
@@ -321,6 +357,38 @@ div.theme img:hover {
 
 .show {
     display: block;
+}
+
+.showFlex {
+    display: flex;
+}
+
+button {
+    cursor: pointer;
+    background-color: #f04ea6;
+    border: none;
+    padding: 0.5em;
+    border-radius: 1em;
+    font-size: 1em;
+    width: 7em;
+    color: white;
+    transition: all 0.5s;
+}
+
+button:hover {
+    width: 8em;
+    background-color: #f577bc;
+}
+
+button:focus {
+    outline: none;
+}
+
+em {
+    font-style: normal;
+    font-weight: 700;
+    color: white;
+    padding-right: 0.5em;
 }
 
 #diceSection {

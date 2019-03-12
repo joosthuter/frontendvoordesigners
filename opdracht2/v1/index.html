@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <title>Joop's Fonts</title>
     <link rel="stylesheet" href="style/styleyeet.css">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Merriweather:400,700|Roboto:300,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Merriweather:400,700|Roboto:300,700|EB+Garamond:400,700" rel="stylesheet">
 </head>
 
 <body>
-    <header>
+    <header >
         <div class="theme">
             <p>Theme:</p><img id="themeBtn" src="images/full-moon.png" alt="">
         </div>
@@ -22,34 +22,37 @@
         </div>
         <p id="poem"></p>
     </header>
+    <button id="setting"><em>+ </em> settings</button>
     <nav>
-        <div>
-            <span>
-                <p class="titel">font size:</p>
-                <p id="fontSize">24 pt</p>
-            </span>
-            <input type="range" id="range" min="1.0" max="4.0" step="0.1" value="2.0" />
-        </div>
-        <div>
-            <p>weight:</p>
-            <span class="regubold">
-                <p id="regular" class="visiting">regular</p>
-                <p id="bold">bold</p>
-            </span>
-        </div>
-        <div>
-            <span>
-                <p class="titel">color:</p>
-                <textarea name="" style="resize: none;" id="colorValue" cols="6" rows="1">#848484</textarea>
-            </span>
-            <input id="colorPicker" type="color" name="colorpicker" value="#848484">
-        </div>
-        <div>
-            <p class="titel">text:</p>
-            <textarea name="" style="resize: none;" placeholder="Enter your text" class="textSetting" id="textSet" cols="13" rows="1"></textarea>
+        <div class="container">
+            <div>
+                <span>
+                    <p class="titel">font size:</p>
+                    <p id="fontSize">24 pt</p>
+                </span>
+                <input type="range" id="range" min="1.0" max="4.0" step="0.1" value="2.0" />
+            </div>
+            <div>
+                <p>weight:</p>
+                <span class="regubold">
+                    <p id="regular" class="visiting">regular</p>
+                    <p id="bold">bold</p>
+                </span>
+            </div>
+            <div>
+                <span>
+                    <p class="titel">color:</p>
+                    <textarea name="" style="resize: none;" id="colorValue" cols="6" rows="1">#848484</textarea>
+                </span>
+                <input id="colorPicker" type="color" name="colorpicker" value="#848484">
+            </div>
+            <div>
+                <p class="titel">text:</p>
+                <textarea name="" style="resize: none;" placeholder="Enter your text" class="textSetting" id="textSet" cols="13" rows="1"></textarea>
+            </div>
         </div>
     </nav>
-    <main>
+    <main class="yeet">
         <section id="diceSection" class="hide">
             <p>'backspace' to return</p>
             <h2>Random font</h2>
@@ -110,6 +113,10 @@
                 <div class="lora">
                     <h3>Lora</h3>
                     <textarea placeholder="Enter your text" name="joop" rows="5" cols="10" class="text">The blackbird sings at the frontier of his music. The branch where he sat</textarea>
+                </div>
+                <div class="garamond">
+                    <h3>EB Garamond</h3>
+                    <textarea placeholder="Enter your text" name="joop" rows="5" cols="10" class="text">mountain lion, her land, before ours, invasive plants</textarea>
                 </div>
             </main>
         </section>
