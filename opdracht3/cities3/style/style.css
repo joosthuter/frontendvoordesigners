@@ -1,0 +1,151 @@
+* {
+    font-family: roboto;
+
+}
+
+
+h1 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 3em;
+    font-weight: 300;
+    width: 80vw;
+    margin: auto;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+::selection {
+    background-color: rgba(240, 78, 166, 0.6);
+    color: white;
+}
+
+header p {
+    text-align: center;
+    max-width: 25em;
+    margin: auto;
+}
+
+nav {
+    margin: 2em 0 1em 0;
+}
+
+nav button {
+    border: none;
+    font-size: 1em;
+    font-family: courier new;
+    padding: 0.5em;
+}
+
+button:hover {
+    /*    background-color: #ffa5da;*/
+
+}
+
+button:active {
+    /*    background-color: #dd349c;*/
+
+}
+
+button:focus {
+    outline: none;
+}
+
+h2 {
+    text-align: center;
+}
+
+input {
+    border: none;
+    font-weight: 700;
+    font-size: 2em;
+    text-align: center;
+    background-color: transparent;
+    box-sizing: border-box;
+    width: 75%;
+    margin: 0 12.5%;
+    /*    border-bottom: solid 2px;*/
+    /*    border-bottom-color: transparent;*/
+}
+
+input:focus {
+    outline: none;
+}
+
+input:hover {
+    color: #555555;
+
+    /*    border-bottom: solid 2px;*/
+}
+
+.yeet {
+    text-align: center;
+}
+
+.yeet button {
+    height: 2.5em;
+    width: 6em;
+    padding: 0;
+    border-radius: 2em;
+    color: white;
+    background-color: #f04ea6;
+    font-weight: 700;
+    box-shadow: inset -0px -2px 0px 0px rgba(194, 66, 136, 1);
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.yeet button:hover {
+    background-color: #ea74b4;
+}
+
+.yeet button:active {
+    box-shadow: inset -0px -0px 0px 0px rgba(194, 66, 136, 1);
+}
+
+article div div {
+    background-color: #f04ea6;
+    border-radius: 10000px;
+    margin: auto;
+}
+
+.container {
+    border-radius: 0;
+    width: 80%;
+    height: 30em;
+    margin: auto;
+    margin-top: 1em;
+    background-color: #fcfcfc;
+    background-image: url(stripes.png);
+    background-size: cover;
+    padding-top: 1em;
+}
+
+article div div:hover {
+    background-color: #ea74b4;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+article {
+    /*box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.13);*/
+    padding: 2em;
+    width: 45%;
+    height: 40em;
+    margin: 1em;
+    min-width: 20em;
+}
+
+article p {
+    text-align: center;
+    color: #f04ea6;
+}
+
+p span {
+    font-weight: 700;
+    color: black;
+}

@@ -40,17 +40,6 @@ var stink = 1;
         stink = 1;
     }
 }*/
-function setThings() {
-    if (stink === 1) {
-        main.style.marginTop = "0em";
-        settingsBtn.innerHTML = "<em>-</em> settings";
-        stink = 2;
-    } else if (stink === 2) {
-        main.style.marginTop = "-6.5em";
-        settingsBtn.innerHTML = "<em>+</em> settings";
-        stink = 1;
-    }
-}
 
 function fontify() {
     for (var i = 0; i < text.length; i++) {
@@ -154,7 +143,6 @@ regular.addEventListener("click", makeReg);
 bold.addEventListener("click", makeBold);
 textSetting.addEventListener("input", textify);
 btnTheme.addEventListener("click", theme);
-settingsBtn.addEventListener("click", setThings);
 
 window.addEventListener("keyup", dice);
 

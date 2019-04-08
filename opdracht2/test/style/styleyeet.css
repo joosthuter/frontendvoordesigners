@@ -1,0 +1,47 @@
+* {
+    text-align: center;
+    font-family: helvetica;
+    font-weight: 300;
+    color: white;
+}
+
+body {
+    width: 100vw;
+    height: 100vw;
+    overflow-x: hidden;
+
+    background-color: black;
+}
+
+button {
+    margin: auto;
+    background-color: mediumpurple;
+    border: none;
+    font-size: 1em;
+    padding: 0.5em;
+    border-radius: 2em;
+    transition: all 0.5s;
+}
+
+button:hover {
+    background-color: #bda8ea;
+}
+
+button:focus {
+    outline: none;
+}
+
+img {
+    position: absolute;
+}
+
+.moon {
+    margin-top: 800em;
+    left: 0;
+}
+
+.mars {
+    width: 2000px;
+    margin-top: 10000em;
+    left: -8em;
+}

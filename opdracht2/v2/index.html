@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Joop's Fonts</title>
+    <link rel="stylesheet" href="style/styleyeet.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Merriweather:400,700|Roboto:300,700|EB+Garamond:400,700" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="theme">
+            <p>Theme:</p><img id="themeBtn" src="images/full-moon.png" alt="">
+        </div>
+
+        <h1>Joop's Fonts</h1>
+        <a href="https://joosthuter.github.io/frontendvoordesigners/opdracht1/v4/">Joop's Gallery</a>
+        <div>
+            <h2>poem of the day</h2>
+            <p id="poemFont"></p>
+        </div>
+        <p id="poem"></p>
+    </header>
+    <button id="setting"><em>+ </em> settings</button>
+    <nav>
+        <div class="container">
+            <div>
+                <span>
+                    <p class="titel">font size:</p>
+                    <p id="fontSize">24 pt</p>
+                </span>
+                <input type="range" id="range" min="1.0" max="4.0" step="0.1" value="2.0" />
+            </div>
+            <div>
+                <p>weight:</p>
+                <span class="regubold">
+                    <p id="regular" class="visiting">regular</p>
+                    <p id="bold">bold</p>
+                </span>
+            </div>
+            <div>
+                <span>
+                    <p class="titel">color:</p>
+                    <textarea name="" style="resize: none;" id="colorValue" cols="6" rows="1">#848484</textarea>
+                </span>
+                <input id="colorPicker" type="color" name="colorpicker" value="#848484">
+            </div>
+            <div>
+                <p class="titel">text:</p>
+                <textarea name="" style="resize: none;" placeholder="Enter your text" class="textSetting" id="textSet" cols="13" rows="1"></textarea>
+            </div>
+        </div>
+    </nav>
+    <main class="yeet">
+        <section id="diceSection" class="hide">
+            <p>'backspace' to return</p>
+            <h2>Random font</h2>
+
+            <div>
+                <h3 id="diceFont"></h3>
+                <textarea placeholder="Enter your text" name="joop" rows="7" cols="10" class="text" id="diceText">You tell me I am wrong. Who are you, who is anybody to tell me I am wrong? I am not wrong.</textarea>
+            </div>
+        </section>
+        <section id="sansSection">
+            <h2>Sans Serif</h2>
+            <main>
+                <div class="roboto">
+                    <h3>Roboto</h3>
+                    <textarea placeholder="Enter your text" name="joop" rows="5" cols="10" class="text">this morning, weaving Chi in the garden, invisible ball in my hand</textarea>
+                </div>
+                <div class="arial">
+                    <h3>Arial</h3>
+                    <textarea placeholder="Enter your text" name="joop" rows="5" cols="10" class="text">Halong Bay, battle distant memory, smoke from Gulf of Tonkin</textarea>
+                </div>
+                <div class="helvetica">
+                    <h3>Helvetica</h3>
+                    <textarea placeholder="Enter your text" name="joop" rows="5" cols="10" class="text">did the atom ever know its destiny how our hands create?</textarea>
+                </div>
+                <div class="lucidaGrande">
+                    <h3>Lucida Grande</h3>
+                    <textarea placeholder="Enter your text" name="joop" rows="5" cols="10" class="text">Among heart-shaped leaves, the white fish gleams, red tail. Soft lotuses sleep. </textarea>
+                </div>
+                <div class="verdana">
+                    <h3>Verdana</h3>
+                    <textarea placeholder="Enter your text" name="joop" rows="5" cols="10" class="text">stopped in my tracks, by a primrose blooming – I, too, will overcome this</textarea>
+                </div>
+                <div class="tahoma">
+                    <h3>Tahoma</h3>
+                    <textarea placeholder="Enter your text" name="joop" rows="5" cols="10" class="text">dinner, a bowl of rice and soy sauce, food to survive on</textarea>
+                </div>
+            </main>
+        </section>
+        <section id="serifSection">
+            <h2>Serif</h2>
+            <main>
+                <div class="georgia">
+                    <h3>Georgia</h3>
+                    <textarea placeholder="Enter your text" name="joop" rows="5" cols="10" class="text">scent of orange blossoms – memories of my late grandma who planted this tree</textarea>
+                </div>
+                <div class="times">
+                    <h3>Times</h3>
+                    <textarea placeholder="Enter your text" name="joop" rows="5" cols="10" class="text">my heart, the Santa Ana winds today, branches fall to the ground</textarea>
+                </div>
+                <div class="palatino">
+                    <h3>Palatino Linotype</h3>
+                    <textarea placeholder="Enter your text" name="joop" rows="5" cols="10" class="text">The blackbird sings at the frontier of his music. The branch where he sat</textarea>
+                </div>
+                <div class="merriweather">
+                    <h3>Merriweather</h3>
+                    <textarea placeholder="Enter your text" name="joop" rows="5" cols="10" class="text">The blackbird sings at the frontier of his music. The branch where he sat</textarea>
+                </div>
+                <div class="lora">
+                    <h3>Lora</h3>
+                    <textarea placeholder="Enter your text" name="joop" rows="5" cols="10" class="text">The blackbird sings at the frontier of his music. The branch where he sat</textarea>
+                </div>
+                <div class="garamond">
+                    <h3>EB Garamond</h3>
+                    <textarea placeholder="Enter your text" name="joop" rows="5" cols="10" class="text">mountain lion, her land, before ours, invasive plants</textarea>
+                </div>
+            </main>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="script/script.js"></script>
+    <script src="script/script2.js"></script>
+
+</body>
+
+</html>

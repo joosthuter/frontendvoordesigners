@@ -1,0 +1,94 @@
+* {
+    font-family: roboto;
+
+}
+
+
+h1 {
+    text-align: center;
+    font-weight: 300;
+    font-size: 3em;
+    font-weight: 300;
+    width: 80vw;
+    margin: auto;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+header p {
+    text-align: center;
+    max-width: 25em;
+    margin: auto;
+}
+
+nav {
+    margin: 2em 0 1em 0;
+}
+
+nav button {
+    border: none;
+    font-size: 1em;
+    font-family: courier new;
+    padding: 0.5em;
+}
+
+nav button:hover {
+    /*    background-color: #ffa5da;*/
+    color: #f04ea6;
+}
+
+nav button:active {
+    /*    background-color: #dd349c;*/
+    color: #c13280;
+}
+
+nav button:focus {
+    outline: none;
+}
+
+h2 {
+    text-align: center;
+}
+
+article div div {
+    background-color: #f04ea6;
+    border-radius: 10000px;
+    margin: auto;
+}
+
+.container {
+    border-radius: 0;
+    height: 12em;
+}
+
+article div div:hover {
+    background-color: #ea74b4;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+article {
+    /*box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.13);*/
+    padding: 2em;
+    width: 45%;
+    height: 30em;
+    margin: 1em;
+    background-color: #fcfcfc;
+    background-image: url(stripes.png);
+    background-size: cover;
+    min-width: 20em;
+}
+
+article p:first-of-type {
+    text-align: center;
+    color: #f04ea6;
+}
+
+p span {
+    font-weight: 700;
+    color: black;
+}

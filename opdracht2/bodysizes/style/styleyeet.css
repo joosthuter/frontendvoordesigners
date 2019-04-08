@@ -1,0 +1,198 @@
+* {
+    font-family: helvetica;
+}
+
+
+body {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-color: black;
+    background-image: url(../images/milkyway.jpg);
+}
+
+nav {
+    position: absolute;
+    z-index: 15;
+    display: flex;
+}
+
+nav div {
+    transition: all 0.5s;
+}
+
+button {
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    border: none;
+    width: 8em;
+    padding-top: 5em;
+    margin-top: 1em;
+    background-size: 4em;
+    background-repeat: no-repeat;
+    background-position: top 0.5em right 2em;
+    transition: all 0.5s;
+}
+
+button:hover {
+    padding-top: 6em;
+    margin-top: 0em;
+    color: #9f9f9f;
+}
+
+#visibility {
+    margin-right: 2em;
+}
+
+#visibility:hover {
+    padding-top: 5em;
+    margin-top: 1em;
+}
+
+.visible {
+    background-image: url(../images/visible.png);
+    background-position: top 1.5em right 2em;
+}
+
+.notvisible {
+    background-image: url(../images/not-visible.png);
+    background-position: top 1.2em right 2em;
+    opacity: 0.3;
+}
+
+.notvisible:hover {
+    opacity: 1;
+}
+
+nav div button:nth-child(1) {
+    background-image: url(../images/moon_PNG21.png);
+}
+
+nav div button:nth-child(2) {
+    background-image: url(../images/mercury.png);
+}
+
+nav div button:nth-child(3) {
+    background-image: url(../images/venus.png);
+}
+
+nav div button:nth-child(4) {
+    background-image: url(../images/earth.png);
+}
+
+nav div button:nth-child(5) {
+    background-image: url(../images/mars.png);
+}
+
+nav div button:nth-child(6) {
+    background-image: url(../images/jupiter.png);
+}
+
+nav div button:nth-child(7) {
+    background-image: url(../images/saturn.png);
+    background-size: 7em;
+    background-position: top 1.3em right 0.5em;
+}
+
+nav div button:nth-child(8) {
+    background-image: url(../images/uranus.png);
+}
+
+nav div button:nth-child(9) {
+    background-image: url(../images/neptune.png);
+}
+
+button:focus {
+    outline: none;
+}
+
+#celestial {
+    cursor: help;
+}
+
+.city {
+    position: absolute;
+    width: 110em;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.mercury {
+    position: absolute;
+    left: 50%;
+}
+
+.venus {
+    position: absolute;
+    left: 50%;
+}
+
+.moon {
+    position: absolute;
+    height: 20px;
+    left: 50%;
+    top: 10em;
+}
+
+.mars {
+    position: absolute;
+    left: 50%;
+    top: 10em;
+}
+
+.earth {
+    position: absolute;
+    left: 50%;
+    top: 9em;
+}
+
+.jupiter {
+    position: absolute;
+    left: 30%;
+    top: 0;
+}
+
+.saturn {
+    position: absolute;
+    left: 10%;
+    top: 0;
+}
+
+.uranus {
+    position: absolute;
+    left: 40%;
+    top: 0;
+}
+
+.neptune {
+    position: absolute;
+    left: 40%;
+    top: 0;
+}
+
+.info {
+    position: absolute;
+    left: 2em;
+    bottom: 20em;
+    color: white;
+    opacity: 0;
+    transition: all 1s;
+    z-index: 20;
+}
+
+.info h2 {
+    margin-bottom: 0.5em;
+}
+
+.bar {
+    height: 0.2em;
+    background-color: white;
+    width: 0%;
+    transition: all 1s;
+    transition-delay: 0.2s;
+}
+
+#form {
+    font-weight: 700;
+}
