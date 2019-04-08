@@ -143,7 +143,6 @@ function showCity1(jsonObj, x) {
 
 }
 
-
 cityFunk(amsterdam, showCity1);
 cityFunk(sanFran, showCity1, 2);
 
